@@ -1,0 +1,49 @@
+\documentclass[twoside]{article}
+
+\usepackage{ustj}
+
+\newcommand{\authorname}{N. E. Davis}
+\newcommand{\authorpatp}{\patp{lagrev-nocfep}}
+\newcommand{\affiliation}{Urbit Foundation}
+
+%  Make first page footer:
+\fancypagestyle{firststyle}{%
+\fancyhf{}% Clear header/footer
+\fancyhead{}
+\fancyfoot[L]{{\footnotesize
+              %% We toggle between these:
+              % Manuscript submitted for review.\\
+            %   {\it Urbit Systems Technical Journal} I:1 (2024):  1. \\
+            %   ~ \\
+            %   Address editorial correspondence to \authorpatp.
+              }}
+}
+%  Arrange subsequent pages:
+\fancyhf{}
+\fancyhead[LE]{{\urbitfont Urbit Systems Technical Journal}}
+\fancyhead[RO]{Letter from the Editor}
+\fancyfoot[LE,RO]{\thepage}
+
+%%MANUSCRIPT
+\title{From the Editor}
+\author{\authorname~\authorpatp \\ \affiliation}
+\date{}
+
+\begin{document}
+
+%\maketitle
+\thispagestyle{firststyle}
+
+% We will adjust page numbering in final editing.
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\sloppy
+In this issue of the \emph{Urbit Systems Technical Journal}, we are delighted to present a number of topical pieces, most saliently \patp{dozreg-toplud}'s revisitation of subject knowledge analysis based on his active development and implementation.  SKA promises an era of faster Nock compilation.  \patp{lagrev-nocfep} contributes two pieces, one on how the SKI combinator calculus, long a mainstream staple of fundamental computer science, can be rigorously related to the Nock combinator calculus; and the other on the Urbit numerical stack, which first began development in 2020 and continues to break new ground in deterministic numerical computing.  Longtime former Tlon CTO \patp{wicdev-wisryt}, a chief architect of many parts of Urbit itself, explains Hoon's input/output model in a piece from the archives.  As always, each article selected culminates long and careful design and development work, and we are proud to present them to the Urbit community.
+
+Urbit programming has continued to be revolutionized, both by new programming models and agent-driven development.  We excitedly anticipate new waves of both userspace and kernel-level products in the coming months and years.
+
+As of 2025, USTJ has become a sponsored project of the Groundwire Foundation, a new nonprofit entity dedicated to Urbit's core development and improving support for Bitcoin integrations into the Urbit ecosystem.  We are grateful for their patronage and the educational and documentary mandate.
+
+Computer science happens in the trenches.  \tombstone{}
+\end{document}
