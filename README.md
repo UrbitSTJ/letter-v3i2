@@ -1,3 +1,9 @@
+<!-- ustj-doi -->
+# From the Editor: Urbit Systems Technical Journal, Vol. 3, No. 2
+
+Fall 2026. Part of the complete issue: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24389594.svg)](https://doi.org/10.5281/zenodo.24389594)
+<!-- /ustj-doi -->
+
 # USTJ Template
 
 The template for USTJ LaTeX submissions.  You should *import* this repo, not *fork* it.
